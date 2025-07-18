@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flipkart Top Navbar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+ .Search_button{
+  margin-left: 50px;
+  width: 40%;
+  height: 40px;
+  font-size: large;
+  background-color: azure;
+  border-radius: 20px;
+  cursor: pointer;
+ }
+  
+
+
+  body{
+    background-color: white;
+  
+  }
+  
+  .seller{
+    border-color: black;
+    color: black;
+    height: 30px;
+    width: 180px;
+    margin-left: 50px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+
+   
+  }
+  ul{
+    display: inline-flex;
+    gap: 70px;
+    margin-left: 70px;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+    list-style: none;
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+
+  }
+  .section-box{
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 20px;
+    border: 20px;
+    margin: 20px;
+    padding: 20px;
+  }
+  .cart-container{
+    display: inline-flex;
+    gap: 10px;
+    margin-left: 30px;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .cart-icon{
+    height: 24px;
+    width: 24px;
+  }
+  .cart-text{
+     height: 40px;
+    width: 80px;
+  color: #000;
+    border: none;
+    font-weight: bold;
+    background: none;
+    font-size: large;
+    list-style: none;
+    cursor: pointer;
+    padding-top: 20px;
+  }
+  .login-container{
+    display: inline-flex;
+    gap: 10px;
+    margin-left: 30px;
+    align-items: center;
+  }
+  .login-icon{
+    width: 24px;
+    height: 24px;
+
+  }
+  .login-text{
+    color: #000;
+    height: 40px;
+    width: 80px;
+    border: none;
+    font-weight: bold;
+    background: none;
+    font-size: large;
+    list-style: none;
+    cursor: pointer;
+padding-top: 20px;
+  }
+.seller-container{
+display: inline-flex;
+  gap: 10px;
+  margin-left: 30px;
+  align-items: center;
+  
+}
+.seller-icon{
+  height: 24px;
+  width: 24px;
+
+}
+.seller-text{
+    color: #000;
+    height: 40px;
+    width: auto;
+    border: none;
+    font-weight: bold;
+    background: none;
+    font-size: large;
+    list-style: none;
+    cursor: pointer;
+padding-top: 20px;
+}
+.kilos-img:hover,.mobile-img:hover,.fashion-img:hover,.electronics-img:hover,.home-img:hover,.appliance-img:hover,.booking-img:hover,.toys-img:hover{
+ transform: scale(1.1);
+       transition: transform 0.3s;
+       cursor: pointer;
+
+}
+
+</style> 
+
+
+  <header>
+   <div class="section-box">
+      
+      <img src="images/flipkart plus.svg" alt="" style="height: 60px;" width="250px;" class="logo-img">
+      <button class="Search_button">Search for Products, Brands and More</button> 
+      <div class="login-container">
+        <img src="images/login icon.svg" alt="LOGIN" class="login-icon">
+        <span class="login-text">LOGIN</span> 
+      </div>
+      <div class="cart-container">
+        <img src="images/cart new.png" alt="CART" class="cart-icon"> 
+        <span class="cart-text">CART</span>
+      </div>
+      <div class="seller-container">
+        <img src="images/seller icon.svg" alt="BECOME A SELLER" class="seller-icon">
+        <span class="seller-text">BECOME A SELLER</span>
+      </div>
+    
+   </div>
+  </header>
+
+    <ul>
+      <li>
+        <img src="images/1.webp" class="kilos-img">
+        <p>Kilos</p>
+      </li>
+      <li>
+        <img src="images/2.webp" class="mobile-img"  onclick="mobile()">
+        <p>Mobiles</p>
+      </li>
+      <li>
+        <img src="images/3.webp" class="fashion-img">
+        <p>Fashion</p>
+      </li>
+      <li>
+        <img src="images/4.webp" class="electronics-img">
+        <p>Electronics</p>
+      </li>
+      <li>
+        <img src="images/5.webp" class="home-img">
+        <p>Home & Furniture</p>
+      </li>
+      <li>
+        <img src="images/6.webp" class="appliance-img"  onclick="appliances()">
+        <p>Appliances</p>
+      </li>
+      <li>
+        <img src="images/7.webp" class="booking-img">
+        <p>Flight Bookings</p>
+      </li>
+      <li>
+        <img src="images/8.webp" class="toys-img">
+        <p>Beauty, Toys & More</p>
+      </li>
+      
+    </ul>
+
+
+ <h2>Best of Electronics</h2>
+  <ul class="product-list">
+    <li>
+      <img src="images/earbuds.webp" class="earbuds-img">
+      <p>Best Truewireless earbuds</p>
+      <span class="highlight">Grab Now</span>
+    </li>
+    <li>
+      <img src="images/1 new.webp" class="shaver-img" alt="Shaver">
+      <p>Best of Shavers</p>
+      <span class="highlight">From ₹1,649</span>
+    </li>
+    <li>
+      <img src="images/3 new.webp" class= "special-img" alt="Printer">
+      <p>Printers</p>
+      <span class="highlight">From ₹2336</span>
+    </li>
+    <li>
+      <img src="images/4 new.webp" class="camera-img" alt="Mirrorless Camera Printer">
+      <p>Top Mirrorless Camera Printer</p>
+      <span class="highlight">Shop Now!</span>
+    </li>
+    <li>
+      <img src="images/5 new.webp" class="asus-img" alt="ASUS Monitor">
+      <p>ASUS Monitors</p>
+      <span class="highlight">From ₹14999</span>
+    </li>
+    <li>
+      <img src="images/6 new.webp" class="dell-img" alt="Dell Monitor">
+      <p>Monitor</p>
+      <span class="highlight">From ₹8279</span>
+    </li>
+    <li>
+      <img src="images/flight.webp" class="flight-img" alt="flight bookings">
+    
+    </li>
+  </ul>
+<style>
+ h2{
+  font-weight: bold;
+  font-size: x-large ;
+  color: black;
+ }
+.product-list{
+  display: inline-flex;
+  list-style: none;
+  gap: 60px;
+  padding: 0;
+}
+
+.product-list li {
+  text-align: center;
+  width: 140px;
+}
+
+.product-list li img {
+  width: 80px; 
+  height: auto;
+}
+
+img.special-img {
+height: 150px !important;
+width: 100px !important;
+}
+img.shaver-img{
+  height: 170px !important;
+  width: 100px !important;
+}
+img.camera-img{
+  height: 150px !important;
+  width: 100px !important;
+}
+img.asus-img{
+  height: 150px !important;
+  width: 100px !important;
+}
+img.dell-img{
+  height: 150px !important;
+  width: 100px !important;
+}
+img.flight-img{
+  height: 300px !important;
+  width: 200px !important;
+}
+
+.product-list li p {
+  margin: 8px 0 4px;
+  font-weight: 500;
+}
+
+.product-list li .highlight {
+  color: #2874f0;
+  font-weight: bold;
+}
+.earbuds-img:hover,.shaver-img:hover,.special-img:hover,.camera-img:hover,.asus-img:hover,.dell-img:hover,.flight-img:hover{
+   transform: scale(1.1);
+       transition: transform 0.4s;
+       cursor: pointer;
+
+}
+
+
+</style>
+<footer class="footer">
+  <div class="footer-section">
+    <h4>ABOUT</h4>
+    <ul>
+      <li>Contact us</li>
+      <li>About us</li>
+      <li>Careers</li>
+      <li>Flipkart Stories</li>
+      <li>Press</li>
+      <li>Corporate Information</li>
+    </ul>
+  </div>
+
+  <div class="footer-section">
+    <h4>Group Companies</h4>
+    <ul>
+      <li>Myntra</li>
+      <li>Cleartrip</li>
+      <li>Shopsy</li>
+    </ul>
+  </div>
+
+  <div class="footer-section">
+    <h4>Help</h4>
+    <ul>
+      <li>Payments</li>
+      <li>Shipping</li>
+      <li>Cancellations & Returns</li>
+      <li>FAQ</li>
+    </ul>
+  </div>
+
+  <div class="footer-section">
+    <h4>Mail Us</h4>
+    <ul>
+      <li>Flipkart Internet Private Limited</li>
+      <li>Buildings Alysa, Begonia</li>
+      <li>Bengaluru, 560103, Karnataka</li>
+    </ul>
+  </div>
+</footer>
+<style>
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #222;
+  color: white;
+  padding: 40px;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+}
+
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 80px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding-top: 20px;
+  display: block;
+  margin-left: 0;
+
+
+  
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+ align-items: center;
+  height: auto;
+}
+
+</style>
+<script src="script.js">
+
+</script>
+</body>
+</html>
